@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <title>3D Model in VR</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ModelViewer Element -->
+  <model-viewer 
+    src="Wolverine_best.glb"  <!-- Usando el nuevo archivo GLB que has subido -->
+    alt="Wolverine Model" 
+    auto-rotate 
+    camera-controls 
+    ar 
+    ar-modes="scene-viewer quick-look webxr" 
+    vr 
+    vr-mode="webxr" 
+    shadow-intensity="1" 
+    exposure="1">
+  </model-viewer>
+
+</body>
+</html>
